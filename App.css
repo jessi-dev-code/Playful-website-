@@ -1,0 +1,76 @@
+:root{
+    --background-color-1: #FFE4D7;
+    --background-color-2: #DBA787;
+    --primary-color: #F1A6B4;
+    --primary-color-light: #F8C8D1;
+    --secondary-1:#F26105;
+    --secondary-2:#FFB633;
+    --secondary-3:#093833;
+    --secondary-4:#BD863E;
+    --secondary-5:#C7B65E;
+    --Neutral-black:#000000;
+    --Neutral-white:#EBE8E1; 
+    --big-font-heading-size:53px;
+    --big-font-body-size:18.5px;
+    --big-font-small-size:14.95px;
+    --big-font-link-size:16.1px;
+    --big-button-size:17.25px;
+
+}
+@font-face {
+    font-family: 'cooperRegular';
+    src: url('./fonts/cooperotf/Cooper-Regular.otf');
+}
+@font-face {
+    font-family: 'cooperMedium';
+    src: url('./fonts/cooperotf/Cooper-Medium.otf');
+}
+@font-face {
+    font-family: 'cooperSemi-bold';
+    src: url('./fonts/cooperotf/Cooper-SemiBold.otf');
+}
+@font-face {
+    font-family: 'cooperCooper-bold';
+    src: url('./fonts/cooperotf/Cooper-Bold.otf');
+}
+@font-face {
+    font-family: 'cooperBlack';
+    src: url('./fonts/cooperotf/Cooper-Black.otf');
+}
+@font-face {
+    font-family: 'ApercuRegular';
+    src: url('./fonts/FontsFree-Net-ApercuRegular.ttf');
+}
+@font-face {
+    font-family: 'PalmerLakeScript';
+    src: url('./fonts/PalmerLakeScript-Regular.ttf');
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family:"ApercuRegular";
+    background-color: var(--background-color-1);
+}
+
+
+.NewsletterSection{
+    background-color: var(--secondary-1);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.NewsletterText{
+    font-size: var(--big-font-small-size) !important;
+    letter-spacing: 0.02rem !important;
+}
+.NewsletterSection:hover{
+    background-color: var(--secondary-5);
+}
