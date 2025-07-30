@@ -1,0 +1,8 @@
+
+@media(max-width:768px){
+    .NewsletterText{
+    font-size: 12px !important;
+    font-weight:600;
+    text-align: center;
+}
+}
