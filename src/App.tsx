@@ -1,11 +1,11 @@
 import { Box } from "@mui/material";
 import "./App.css"
 import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
 import Navbar from "./Components/Navbar";
 import Newsletters from "./Components/Newsletters";
 import game from "./assets/Game_icon_67511f51-aa78-49b1-9f0c-8c92435da9fc.png"
-import {animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
+import HeroSection from "./Components/HeroSection";
 function App() {
   return (
     <>
@@ -13,7 +13,7 @@ function App() {
     <motion.img 
         animate={{ rotate: [0, 360] }}
         transition={{duration: 10, repeat: Infinity }} 
-    className="absolute bottom-4 right-4 cursor-pointer"
+    className="fixed bottom-8 right-8 cursor-pointer"
     src={game}
     width={100}
     />

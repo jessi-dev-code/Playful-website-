@@ -6,37 +6,38 @@ import cartbg from "../assets/cart bg.svg"
 import intagram from "../assets/Instagram svg.svg"
 import facebook from "../assets/facebooksvg.svg"
 import { AnimatePresence, motion } from 'framer-motion';
-import { Search } from "@mui/icons-material"
+import { Menu, Search } from "@mui/icons-material"
 import { useState } from "react"
 
 const Header = () => {
   const [isvisible,setIsVisible] = useState(true)
     return (
       <>
-    <Container  maxWidth={false}   disableGutters className="!h-[95px] flex !pt-[20px] ">
-      <Container disableGutters maxWidth={false} className="Header">
-      <Box className="flex gap-[4px] items-center" 
+    <Container  maxWidth={false}   disableGutters className="">
+      <Container disableGutters maxWidth={false} className="Header flex items-center justify-between">
+      <Box className="flex items-center" 
       sx={{
                 marginLeft:{xs:"10px",md:"40px",lg:"60px"}
 
       }}>
+        <Menu fontSize="small" style={{ width:"1.4rem",height:"2rem",}} className="Menulink"/>
           <img
             src={facebook}
             alt={"logo"}
             loading="lazy"
-            width="40px" 
-            className="cursor-pointer p-[5px] hover-color"
+            width="45px" 
+            className=" p-[5px] hover-color left-header"
             
           />
 
             <img
               src={intagram}
-              className="cursor-pointer rotatesvg p-[5px] hover-color"
+              className=" rotatesvg p-[5px] hover-color left-header"
                  alt={"logo"}
-                 width="40px" 
+                 width="45px" 
              />
           
-        <Box>
+        <Box className=" left-header">
           <TextField variant="outlined" 
            className="input-box link-font"
            placeholder="Search..."
@@ -51,8 +52,8 @@ const Header = () => {
         }}
           sx={{
             "& fieldset": { border: 'none' },
-            width:"245px",
-            height:"45px",
+            width:"205px",
+            height:"50px",
             display:"flex",
             justifyContent:"center",
             alignItems:"center",
@@ -63,6 +64,10 @@ const Header = () => {
       </Box>
       <Box className="flex gap-[8px] items-center">
 <motion.div
+initial={{
+  rotate:[0],
+  x:[0]
+}}
   whileHover={{
     x: [-80,-60,0,60, 80,-60,-80],       
     rotate: [-6,-4,0, 4,6,-4,-6],   
@@ -79,17 +84,19 @@ const Header = () => {
     alt="logo"
     loading="lazy"
     width="200px"
-    className="cursor-pointer"
   />
 </motion.div>
       </Box>
-      <Box className="flex gap-[24px] items-center justify-end" 
+      <Box className="flex gap-[24px] items-center justify-end " 
       sx={{
         marginRight:{xs:"10px",md:"40px",lg:"60px"}
       }}>
-        <Typography className="cursor-pointer link-font hover-color">Your Account</Typography>
+        <Typography className="link-font hover-color left-header">Your Account</Typography>
 
         <div className="flex flex-col relative">
+
+
+
 <AnimatePresence initial={true}>
 <motion.div
     onClick={() => setIsVisible(!isvisible)}
@@ -100,24 +107,22 @@ const Header = () => {
             alt={"logo"}
             loading="lazy"
             width={40}
-            className="cursor-pointer"
           />
 </motion.div>
-    {isvisible ? (
-        <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
+    {!isvisible ? (
+          <motion.a 
+          initial={{ opacity: 0, scale: 0 ,visibility:0 }}
+            animate={{ opacity: 1, scale: 1 ,visibility:1}}
             exit={{ opacity: 0, scale: 0 }}
             key="box"
             className="absolute top-[40px] -left-[50px] -z-[10] Wishlist flex justify-center items-center w-[140px] h-[40px]"
-        >
-          <a href="#">Wish List</a>
-        </motion.div>
+          href="#">Wish List</motion.a>
     ) : null}
 
 </AnimatePresence>
-        </div>
 
+
+        </div>
           <div className="relative w-max">
             <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] link-font">1</p>
         <motion.div
@@ -126,7 +131,7 @@ const Header = () => {
                 >
           <img 
            src={cartbg}
-           className="relative cursor-pointer"
+           className="relative"
           />
           </motion.div>
           </div>
