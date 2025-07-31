@@ -2,6 +2,20 @@
         .Menulink{
         margin-right: 10px;
     }
+
+    
+}
+@media(max-width:700px){
+    .Heading{
+        font-size: 86.5px !important;
+        line-height: 1.2 !important;
+    }
+    .span-heading{
+        font-size:50px !important;
+    }
+.heading-body{
+    font-size: 14px !important;
+}
     
 }
 
@@ -11,7 +25,21 @@
     font-weight:600;
     text-align: center;
 }
-
+    /* --big-font-heading-size:36.5px;
+    --big-font-body-size:14.1px; */
+    
+}
+@media(max-width:980px){
+    .Heading{
+        font-size: 36.5px !important;
+        line-height: 1.2 !important;
+    }
+    .span-heading{
+        font-size:50px !important;
+    }
+.heading-body{
+    font-size: 14px !important;
+}
 }
 @media(max-width:1000px){
     .Menulink{

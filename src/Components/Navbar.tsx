@@ -46,7 +46,7 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               key="box"
-              className="absolute top-[60px] nav-sublinks-container"
+              className="absolute top-[60px] nav-sublinks-container !z-50"
             >
               <Box className="flex flex-col relative justify-between">
                 <Link className="Navsublinks">SHOP ALL</Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               key="box"
-              className="absolute top-[60px] nav-sublinks-container"
+              className="absolute top-[60px] nav-sublinks-container !z-50"
             >
               <Box className="flex flex-col relative justify-between">
                 <Typography className="Navsublinks navpara">Whether it's decor for the new nursery or stylish storage solutions for toys, we've got what you need. Explore our interior collection today.</Typography>
@@ -162,7 +162,7 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               key="box"
-              className="absolute top-[60px] nav-sublinks-container"
+              className="absolute top-[60px] nav-sublinks-container !z-50"
             >
               <Box className="flex flex-col relative justify-between">
                 <Typography className="Navsublinks navpara !-tracking-normal">We believe play is SUPER important for little ones, as is making sure it's developmentally appropriate (what can I say, it's the teacher in me). That's why we've tagged all of our play items by age to help you choose the right toy for your little one or when picking out a gift..</Typography>
@@ -217,7 +217,7 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               key="box"
-              className="absolute top-[60px] nav-sublinks-container"
+              className="absolute top-[60px] nav-sublinks-container !z-50"
             >
               <Box className="flex flex-col relative justify-between">
                 <Typography className="Navsublinks navpara">Kidswear should be an extension of your sense of style, so you'll find our clothing comes with all the design details you'd expect for yourself. Browse daywear, nightwear, outerwear, swimwear and accessories.</Typography>
@@ -276,7 +276,7 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               key="box"
-              className="absolute top-[60px] nav-sublinks-container"
+              className="absolute top-[60px] nav-sublinks-container !z-50"
             >
               <Box className="flex flex-col relative justify-between">
                 <Typography className="Navsublinks navpara">Make travelling with kids a breeze with our travel accessories. Check out our travel changing mats, snack pots and water bottles and never get caught short again. You'll even find mini backpacks and toys made for on-the-go adventures too.</Typography>
@@ -339,7 +339,7 @@ const Navbar = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
               key="box"
-              className="absolute top-[60px] nav-sublinks-container"
+              className="absolute top-[60px] nav-sublinks-container !z-50"
             >
               <Box className="flex flex-col relative justify-between">
                 <Link className="Navsublinks" sx={{
@@ -408,7 +408,7 @@ const Navbar = () => {
       <Link
         component="button"
         variant="body1"
-        className="link-font link-nav-font blog"
+        className="link-font link-nav-font blog "
         >
         Blogs
         
@@ -417,7 +417,8 @@ const Navbar = () => {
               initial={{ opacity: 0, scale: 1 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0 }}
-              key="box">
+              key="box"
+              >
                 <img className="absolute top-3 max-w-100 z-100"
            src={education} alt="" />
               </motion.div>
@@ -484,4 +485,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar 
