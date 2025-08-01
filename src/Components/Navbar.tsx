@@ -23,7 +23,7 @@ const Navbar = () => {
   const [isvisible8, setIsVisible8] = useState(true)
   return (
     <Container maxWidth={false} disableGutters className="flex  items-center justify-center pt-5 pb-5 navbar"
-    sx={{gap:{xs:"10px",md:"20px",lg:"40px"}}}
+    sx={{gap:{xs:"10px",md:"20px",lg:"50px"}}}
     >
 
     <div className="flex flex-col relative">
@@ -437,7 +437,7 @@ const Navbar = () => {
         variant="body1"
         className="link-font link-nav-font blog"
         >
-        About us
+        About
         
         {!isvisible7 ? (
           <motion.div
@@ -463,7 +463,7 @@ const Navbar = () => {
         variant="body1"
         className="link-font link-nav-font blog"
         >
-      Contact us
+      Contact 
         
         {!isvisible8 ? (
           <motion.div

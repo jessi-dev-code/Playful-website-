@@ -18,28 +18,11 @@
 }
     
 }
-
-@media(max-width:768px){
-    .NewsletterText{
-    font-size: 12px !important;
-    font-weight:600;
-    text-align: center;
-}
-    /* --big-font-heading-size:36.5px;
-    --big-font-body-size:14.1px; */
-    
-}
-@media(max-width:980px){
+@media(max-width:1245px){
     .Heading{
-        font-size: 36.5px !important;
-        line-height: 1.2 !important;
+        font-size: 45px !important;
     }
-    .span-heading{
-        font-size:50px !important;
-    }
-.heading-body{
-    font-size: 14px !important;
-}
+    
 }
 @media(max-width:1000px){
     .Menulink{
@@ -51,3 +34,40 @@
         display: none !important;
     }
 }
+
+
+@media(max-width:980px){
+    .Heading{
+        font-size: 40px !important;
+        line-height: 1 !important;
+    }
+    .span-heading{
+        font-size:60px !important;
+    }
+.heading-body{
+    font-size: 18px !important;
+}
+}
+@media(max-width:768px){
+    .NewsletterText{
+    font-size: 12px !important;
+    font-weight:600;
+    text-align: center;
+}
+.productdisplay-heading{
+    font-size: 34px !important;
+}
+.productdisplay-para{
+    line-height: 1.6 !important;
+    font-size: 15px !important;
+}
+.smallbuttontext{
+    font-size: 14px !important;
+}
+.card-heading{
+    font-size: 45px !important;
+
+}
+
+}
+

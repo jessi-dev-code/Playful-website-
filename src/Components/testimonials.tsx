@@ -7,9 +7,14 @@ import third from "../assets/LW19727_1111_5.png"
 import second from "../assets/LW19956_9470_2.png"
 import forth from "../assets/LW19266_2334_3.png"
 import wave from "../assets/Wave_8.png"
-const ProductCollection = () => {
+const Babytestimonials = () => {
   return (
     <Container maxWidth={false} disableGutters className=' mt-[60%] pb-20 md:mt-[12%] collection relative mb-[60px] md:mb-[140px]'>
+                <Button disableElevation disableRipple variant='contained' className='!mt-[1%] flex !m-auto Buttontextbig Heading !tracking-tight absolute left-[50%] translate-x-[-50%]' sx={{
+            padding:"0 4rem",
+            height:"70px",
+            fontSize:"50px"
+        }}>#Wearningwilf</Button>
         <motion.img
         animate={{
             y:[0,25,-25,25,0]
@@ -21,14 +26,7 @@ const ProductCollection = () => {
         className='absolute -top-[8%] -md:top-[27%]  md:right-[15%] max-w-[250px] min-w-[120px]'
          src={sunglasses}
         />
-        <Container className='text-center flex flex-col gap-[16px] !pt-20'>
-            <Typography className='Heading !tracking-tighter !text-[56.89px]'
-        >Summer Style at Wilf & Friends</Typography>
-            <Typography className="heading-body max-w-[100%] md:max-w-[60%] !m-auto !tracking-tight !font-medium"
-            sx={{
-                WebkitTextStrokeWidth:0.1
-            }}>Celebrate the return of sunnier days with chic wear, accessories and outdoor fun! <br />Our curated collection is chosen with an eye for quality, longevity, playfulness and joy, and has everything you need for this season and beyond.</Typography>
-        </Container>
+
         <Container maxWidth={false} disableGutters className='flex mt-20 relative'>
             <motion.div
                 className='flex'
@@ -50,11 +48,18 @@ const ProductCollection = () => {
                 ))}
             </motion.div>
         </Container>
+
+
+                <Container className='text-center flex flex-col gap-[16px] !pt-20'>
+            <Typography className='Heading !tracking-tighter !text-[56.89px]'
+        >Enjoyed by them <br />
+Shared by <span className='span-heading'>you</span></Typography>
+        </Container>
         <Container maxWidth="xl" disableGutters className='flex justify-center items-center'>
-        <Button disableElevation disableRipple variant='contained' className='!mt-[4%] flex m-auto Buttontext !tracking-tight' sx={{
+        <Button disableElevation disableRipple variant='contained' className='!mt-[1%] flex m-auto Buttontext !tracking-tight' sx={{
             padding:"0 2.5rem",
             height:"53.75px",
-        }}>Shop the collection now!</Button>
+        }}>View the full gallery</Button>
         </Container>
         <motion.img
         animate={{
@@ -73,4 +78,4 @@ const ProductCollection = () => {
   )
 }
 
-export default ProductCollection
+export default Babytestimonials

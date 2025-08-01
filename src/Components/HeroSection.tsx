@@ -10,12 +10,16 @@ import diamond from "../assets/Diamond_5.png"
 import semicircle from "../assets/Semi_Circle_4.png"
 const HeroSection = () => {
   return (
-    <Container maxWidth={false} disableGutters className=" !h-[80vh] grid grid-cols-12 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 mt-[150px] relative z-0">
-      <Container maxWidth={false} disableGutters className="col-span-12  md:col-span-5 lg:col-span-6 relative">
+    <Container maxWidth={false} disableGutters className=" !md:h-[80vh] grid grid-cols-12 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12  relative z-0 "
+    sx={{
+      marginTop:{xs:"50px",md:"120px"}
+    }}
+    >
+      <Container maxWidth={false} disableGutters className="col-span-12  md:col-span-5 lg:col-span-6 relative ">
         <img
           src={heroImg}
           width={"100%"}
-          className="relative -z-0 h-[100%] !md:min-h-[80vh]"
+          className="relative -z-0 h-[100%] !md:min-h-[80vh] object-cover"
         />
         <motion.img 
           animate={{
@@ -27,12 +31,12 @@ const HeroSection = () => {
           }}
         src={halfmoon}
         width={"20%"}
-        className="absolute -top-[80px] left-[100px]"
+        className="absolute -top-[8%] left-[100px] "
         />
         <img 
         src={semicircle}
          width={"20%"}
-        className="absolute -bottom-20 left-40 rotate-6"
+        className="absolute top-[95%] left-[16%] rotate-8"
         />
         <motion.img
                   animate={{
@@ -44,21 +48,21 @@ const HeroSection = () => {
           }}
         src={diamond}
          width={"28%"}
-        className="absolute -right-[200px] bottom-4"
+        className="absolute left-[80%] md:left-[90%] bottom-4"
         />
       </Container>
-      <Container maxWidth={false} disableGutters className="col-span-12  md:col-span-5 lg:col-span-6 flex flex-col  text-left !pt-[10px] !md:pt-[30px] !pb-[10px] !md:pb-[30px] relative">
+      <Container maxWidth={false} disableGutters className="col-span-12  md:col-span-5 lg:col-span-6 flex flex-col  text-left !pt-[10px] !lg:pt-[30px] !pb-[10px] !lg:pb-[30px] relative">
         <img 
           src={wave}
-          width={200}
+          width={190}
           className="absolute -right-0 top-5 "
         />
-        <Box className="flex flex-col md:max-w-[400px] lg:max-w-[700px] relative !gap-[40px]"
+        <Box className="flex flex-col max-w-[765px] relative !gap-[20px]"
         sx={{
           
-          padding:{xs:"0 0.24rem",md:"0 5rem"}, margin:"auto",
+          padding:{xs:"0 2rem",lg:"0 5rem"}, margin:"auto",
         
-        // marginTop:{xs:"40px",md:"7px"}
+        marginTop:{xs:"10%",xl:"20%"}
         
         }}>
           <Typography className="Heading">We are Wilf & Friends. <br />
@@ -76,12 +80,13 @@ const HeroSection = () => {
                 scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
             src={signatures}
-            width={150}
-            className="flex items-start absolute -bottom-20 !left-0"
+            width={200}
+            className="flex items-start absolute -md:bottom-20 !left-0 w-[150px] md:w-[200px]"
             />
             <motion.img
             initial={{
-              x:0
+              x:0,
+              rotate:[0]
             }}
        whileHover={{
             rotate:[0,-8,0,4,0,-8,0]
@@ -91,8 +96,8 @@ const HeroSection = () => {
    repeat: Infinity
           }}
              src={flower}
-             width={"55%"}
-             className="absolute !left-[40%] top-[120%]"
+             className="absolute left-[50%] !md:left-[36%] top-[110%] md:top-[100%] w-[60%]"
+            
             >
 
             </motion.img>
