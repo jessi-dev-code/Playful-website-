@@ -10,12 +10,12 @@ import diamond from "../assets/Diamond_5.png"
 import semicircle from "../assets/Semi_Circle_4.png"
 const HeroSection = () => {
   return (
-    <Container maxWidth={false} disableGutters className=" !h-[100vh] grid grid-cols-12 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 mt-[150px] relative z-0">
+    <Container maxWidth={false} disableGutters className=" !h-[80vh] grid grid-cols-12 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 mt-[150px] relative z-0">
       <Container maxWidth={false} disableGutters className="col-span-12  md:col-span-5 lg:col-span-6 relative">
         <img
           src={heroImg}
-          width={"120%"}
-          className="relative -z-0 h-[100%] !md:min-h-[100vh]"
+          width={"100%"}
+          className="relative -z-0 h-[100%] !md:min-h-[80vh]"
         />
         <motion.img 
           animate={{
@@ -58,7 +58,7 @@ const HeroSection = () => {
           
           padding:{xs:"0 0.24rem",md:"0 5rem"}, margin:"auto",
         
-        marginTop:{xs:"40px",md:"60px"}
+        // marginTop:{xs:"40px",md:"7px"}
         
         }}>
           <Typography className="Heading">We are Wilf & Friends. <br />
