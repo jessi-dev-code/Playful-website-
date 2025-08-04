@@ -8,8 +8,10 @@ import Newsletters from "./Components/Newsletters";
 import HeroSection from "./Components/HeroSection";
 import ProductCollection from "./Components/Collection";
 import ProductCollection2 from "./Components/ProductDisplay";
-import Cards from "./Components/cards";
-import Babytestimonials from "./Components/testimonials";
+import TrendingProducts from "./Components/practise";
+import Wearningwilf from "./Components/Wearingwilf";
+import SignUp from "./Components/signUp";
+import Footer from "./Components/footer";
 function App() {
   return (
     <>
@@ -20,8 +22,9 @@ function App() {
     <HeroSection />
     <ProductCollection />
     <ProductCollection2 />
-    <Cards />
-    <Babytestimonials />
+    <Wearningwilf />
+    <SignUp />
+    <Footer />
     </Box>
     {/* <Box className="w-[100px] absolute bottom-10 right-10 !overflow-hidden">
     <motion.img 
