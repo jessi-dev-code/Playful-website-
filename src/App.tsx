@@ -8,9 +8,11 @@ import { motion } from 'framer-motion';
 import HeroSection from "./Components/HeroSection";
 import ProductCollection from "./Components/Collection";
 import ProductCollection2 from "./Components/ProductDisplay";
-import Wearningwilf from "./Components/Wearingwilf";
+// import Wearningwilf from "./Components/Wearingwilf";
 import SignUp from "./Components/signUp";
 import Footer from "./Components/Footer";
+import CardsAbout from "./Components/CardsAbout";
+import Wearningwilf from "./Components/WearingWilf";
 function App() {
   return (
     <>
@@ -21,6 +23,7 @@ function App() {
     <HeroSection />
     <ProductCollection />
     <ProductCollection2 />
+    <CardsAbout />
     <Wearningwilf />
     <SignUp />
     <Footer />

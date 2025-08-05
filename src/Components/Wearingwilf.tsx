@@ -1,6 +1,7 @@
 import { Button, Container, Typography } from "@mui/material";
+import sunglasses from "../assets/Sunglasses.png";
 import { motion } from "motion/react";
-import wearwilf from "../assets/Wearing_WILF.png"
+import wearwilf from "../assets/Wearing_WILF.webp";
 import first from "../assets/IMG_2872.jpeg";
 import second from "../assets/backpacks_boats-2_1.jpeg";
 import assetcard from "../assets/Asset_1.png";
@@ -69,7 +70,8 @@ const Wearningwilf = () => {
                 idx % 2 === 1 ? " slide-image-neg" : ""
               }`}
               style={{
-                width: "400px",
+                width: "500px",
+                minWidth: "20vw",
                 height: "auto",
                 maxWidth: "24vw",
                 marginRight: 12,
