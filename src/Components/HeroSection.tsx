@@ -62,7 +62,7 @@ const HeroSection = () => {
           
           padding:{xs:"0 2rem",lg:"0 5rem"}, margin:"auto",
         
-        marginTop:{xs:"10%",xl:"8%"}
+        marginTop:{xs:"10%",xl:"20%"}
         
         }}>
           <Typography className="Heading">We are Wilf & Friends. <br />
@@ -96,7 +96,7 @@ const HeroSection = () => {
    repeat: Infinity
           }}
              src={flower}
-             className="absolute left-[30%] !md:left-[36%] top-[110%] md:top-[100%] w-[40%]"
+             className="absolute left-[50%] !md:left-[36%] top-[110%] md:top-[100%] w-[60%]"
             
             >
 
