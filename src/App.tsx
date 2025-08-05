@@ -7,12 +7,10 @@ import game from "./assets/Game_icon_67511f51-aa78-49b1-9f0c-8c92435da9fc.png"
 import { motion } from 'framer-motion';
 import HeroSection from "./Components/HeroSection";
 import ProductCollection from "./Components/Collection";
-import ProductDisplay from "./Components/ProductDisplay";
+import ProductCollection2 from "./Components/ProductDisplay";
 import Wearningwilf from "./Components/Wearingwilf";
 import SignUp from "./Components/signUp";
-import Cards from "./Components/CardsAbout";
 import Footer from "./Components/Footer";
-import Slideshow from "./Components/slideshow";
 function App() {
   return (
     <>
@@ -22,9 +20,7 @@ function App() {
     <Navbar />
     <HeroSection />
     <ProductCollection />
-    <ProductDisplay />
-    <Slideshow />
-    <Cards />
+    <ProductCollection2 />
     <Wearningwilf />
     <SignUp />
     <Footer />

@@ -17,7 +17,8 @@ const Header = () => {
       <Container disableGutters maxWidth={false} className="Header flex items-center justify-between">
       <Box className="flex items-center" 
       sx={{
-        marginLeft:{xs:"10px",md:"40px",lg:"60px"}
+                marginLeft:{xs:"10px",md:"40px",lg:"60px"}
+
       }}>
         <Menu fontSize="small" style={{ width:"1.4rem",height:"2rem",}} className="Menulink"/>
           <img
@@ -25,14 +26,17 @@ const Header = () => {
             alt={"logo"}
             loading="lazy"
             width="45px" 
-            className=" p-[5px] hover-color left-header"    
+            className=" p-[5px] hover-color left-header"
+            
           />
-          <img
+
+            <img
               src={intagram}
               className=" rotatesvg p-[5px] hover-color left-header"
                  alt={"logo"}
                  width="45px" 
              />
+          
         <Box className=" left-header">
           <TextField variant="outlined" 
            className="input-box link-font"

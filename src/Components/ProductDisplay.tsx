@@ -66,7 +66,7 @@ const ProductDisplay = () => {
             ))]}
         </Container>
         <img
-        className='w-[120px] md:w-[200px] absolute top-[102%] left-[5%]'
+        className='w-[160px] absolute top-[102%] left-[5%]'
          src={quality}
         />
 

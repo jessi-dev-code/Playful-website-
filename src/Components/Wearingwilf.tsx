@@ -1,7 +1,6 @@
 import { Button, Container, Typography } from "@mui/material";
-import sunglasses from "../assets/Sunglasses.png";
 import { motion } from "motion/react";
-import wearwilf from "../assets/Wearing_WILF.webp";
+import wearwilf from "../assets/Wearing_WILF.png"
 import first from "../assets/IMG_2872.jpeg";
 import second from "../assets/backpacks_boats-2_1.jpeg";
 import assetcard from "../assets/Asset_1.png";
