@@ -1,4 +1,4 @@
-import { Box, Container, InputAdornment, InputBase, TextField, Typography } from "@mui/material"
+import { Box, Container, InputAdornment, TextField, Typography } from "@mui/material"
 import "../App.css"
 import logo from "../assets/Wilf_and_Friends_logo.png"
 import heart from "../assets/heart-icon.png"

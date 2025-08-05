@@ -1,5 +1,4 @@
 import { Button, Container, Typography } from "@mui/material";
-import sunglasses from "../assets/Sunglasses.png";
 import { motion } from "motion/react";
 import wearwilf from "../assets/Wearing_WILF.webp";
 import first from "../assets/IMG_2872.jpeg";

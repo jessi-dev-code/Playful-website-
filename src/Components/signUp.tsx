@@ -1,7 +1,6 @@
-import { Box, Button, Container, InputAdornment, InputBase, TextField, Typography } from '@mui/material'
+import { Box, Button, Container, InputBase, Typography } from '@mui/material'
 import {motion} from "motion/react"
 import semicircle from "../assets/Semi_Circle_8.png"
-import { Search } from '@mui/icons-material'
 const SignUp = () => {
   return (
     <>
