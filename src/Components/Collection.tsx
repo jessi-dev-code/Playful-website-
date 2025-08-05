@@ -18,7 +18,7 @@ const ProductCollection = () => {
             duration:4,
             repeat:Infinity
         }}
-        className='absolute -top-[10%] -md:top-[27%]  md:right-[15%] max-w-[250px] min-w-[120px]'
+        className='absolute -top-[8%] -md:top-[27%]  md:right-[15%] max-w-[250px] min-w-[120px]'
          src={sunglasses}
         />
         <Container className='text-center flex flex-col gap-[16px] !pt-20'>
