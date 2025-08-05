@@ -63,7 +63,7 @@ const Cards = () => {
                 padding:{xs:"0 1rem",md:"0 5rem"},
                 maxWidth:"120rem"
             }}>
-                {content.map((item,index) => (
+                {content.map((item) => (
                     
                     <motion.div
                     initial={{
