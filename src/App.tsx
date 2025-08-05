@@ -13,6 +13,7 @@ import SignUp from "./Components/signUp";
 import Footer from "./Components/Footer";
 import CardsAbout from "./Components/CardsAbout";
 import Wearningwilf from "./Components/WearingWilf";
+import Slideshow from "./Components/slideshow";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
     <HeroSection />
     <ProductCollection />
     <ProductCollection2 />
+    <Slideshow />
     <CardsAbout />
     <Wearningwilf />
     <SignUp />
