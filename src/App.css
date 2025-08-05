@@ -331,11 +331,10 @@ font-family:"ApercuRegular" !important;
     font-size: 40px !important;
 }
 .hastag{
-
     position: relative;
     z-index: 1000;
     object-fit: contain;
-    width: 30%;
+    width: 40%;
     height: auto;
     margin-bottom: -85px;
     min-width: 220px;

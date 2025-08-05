@@ -40,7 +40,7 @@ const Wearningwilf = () => {
           duration: 4,
           repeat: Infinity,
         }}
-        className="absolute -top-[6%]  left-[70%] md:left-[80%] max-w-[100px] md:max-w-[220px] !z-[200]"
+        className="absolute -top-[6%]  left-[70%] md:left-[80%] max-w-[100px] md:max-w-[200px] !z-[200]"
         src={assetcard}
       />
       <Container className="text-center  flex items-center justify-center !pt-20">
@@ -69,8 +69,7 @@ const Wearningwilf = () => {
                 idx % 2 === 1 ? " slide-image-neg" : ""
               }`}
               style={{
-                width: "500px",
-                minWidth: "20vw",
+                width: "400px",
                 height: "auto",
                 maxWidth: "24vw",
                 marginRight: 12,
