@@ -31,7 +31,7 @@ const imagedata = [
         button:"The W&F Collection"
     }
 ]
-const ProductCollection2 = () => {
+const ProductDisplay = () => {
   return (
     <>
     <Container maxWidth={false} disableGutters className='ProductDisplay flex flex-col gap-[40px] md:gap-[80px] relative'>
@@ -66,7 +66,7 @@ const ProductCollection2 = () => {
             ))]}
         </Container>
         <img
-        className='w-[160px] absolute top-[102%] left-[5%]'
+        className='w-[120px] md:w-[200px] absolute top-[102%] left-[5%]'
          src={quality}
         />
 
@@ -75,4 +75,4 @@ const ProductCollection2 = () => {
   )
 }
 
-export default ProductCollection2
+export default ProductDisplay

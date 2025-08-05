@@ -96,7 +96,7 @@ const HeroSection = () => {
    repeat: Infinity
           }}
              src={flower}
-             className="absolute left-[30%] !md:left-[36%] top-[110%] md:top-[100%] w-[40%]"
+             className="absolute left-[30%] !md:left-[36%] top-[110%] md:top-[100%] lg:w-[40%]"
             
             >
 

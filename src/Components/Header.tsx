@@ -1,4 +1,4 @@
-import { Box, Container, InputAdornment, TextField, Typography } from "@mui/material"
+import { Box, Container, InputAdornment, InputBase, TextField, Typography } from "@mui/material"
 import "../App.css"
 import logo from "../assets/Wilf_and_Friends_logo.png"
 import heart from "../assets/heart-icon.png"
@@ -13,7 +13,7 @@ const Header = () => {
   const [isvisible,setIsVisible] = useState(true)
     return (
       <>
-    <Container  maxWidth={false}   disableGutters className="">
+    <Container  maxWidth={false}   disableGutters className="sticky top-0">
       <Container disableGutters maxWidth={false} className="Header flex items-center justify-between">
       <Box className="flex items-center" 
       sx={{
@@ -45,6 +45,7 @@ const Header = () => {
               </InputAdornment>
             ),
           },
+
         }}
           sx={{
             "& fieldset": { border: 'none' },
@@ -55,7 +56,10 @@ const Header = () => {
             alignItems:"center",
             marginLeft:{xs:"5px",md:"10px",lg:"20px"}
             ,
-          }}></TextField>
+          }}>
+    
+
+          </TextField>
         </Box>
       </Box>
       <Box className="flex gap-[8px] items-center">

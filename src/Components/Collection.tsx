@@ -9,7 +9,7 @@ import forth from "../assets/LW19266_2334_3.png"
 import wave from "../assets/Wave_8.png"
 const ProductCollection = () => {
   return (
-    <Container maxWidth={false} disableGutters className=' mt-[60%] pb-20 md:mt-[12%] collection relative mb-[60px] md:mb-[140px]'>
+    <Container maxWidth={false} disableGutters className='mt-[60%] sm:mt-[24%] pb-20 lg:mt-[12%] collection relative mb-[60px] md:mb-[140px]'>
         <motion.img
         animate={{
             y:[0,25,-25,25,0]
@@ -18,7 +18,7 @@ const ProductCollection = () => {
             duration:4,
             repeat:Infinity
         }}
-        className='absolute -top-[10%] -md:top-[27%]  md:right-[15%] max-w-[250px] min-w-[120px]'
+        className='absolute -top-[10%] -md:top-[27%]  md:right-[15%] max-w-[200px] lg:max-w-[250px]'
          src={sunglasses}
         />
         <Container className='text-center flex flex-col gap-[16px] !pt-20'>
@@ -29,10 +29,10 @@ const ProductCollection = () => {
                 WebkitTextStrokeWidth:0.1
             }}>Celebrate the return of sunnier days with chic wear, accessories and outdoor fun! <br />Our curated collection is chosen with an eye for quality, longevity, playfulness and joy, and has everything you need for this season and beyond.</Typography>
         </Container>
-        <Container maxWidth={false} disableGutters className='flex mt-20 relative'>
+        <Container maxWidth={false} disableGutters className='flex mt-20 relative '>
             <motion.div
                 className='flex'
-                style={{ width: 'mim-content' }}
+                style={{ width: 'max-content' }}
                 animate={{ x: ['0%', '-50%'] }}
                 transition={{
                     repeat: Infinity,
@@ -45,7 +45,7 @@ const ProductCollection = () => {
                         key={idx}
                         src={img}
                         className={`slide-image${idx % 2 === 1 ? ' slide-image-neg' : ''}`}
-                        style={{ minWidth: 300, marginRight: 16 }}
+                        style={{ maxWidth: "20vw", marginRight: 16 }}
                     />
                 ))}
             </motion.div>
@@ -67,7 +67,7 @@ const ProductCollection = () => {
             repeat:Infinity
         }}
          src={wave}
-         className='absolute top-[94%] md:top-[88%] max-w-[120px] md:max-w-[260px] right-[12%]'
+         className='absolute top-[94%] md:top-[88%] max-w-[120px] lg:max-w-[260px] right-[12%]'
         />
     </Container>
   )

@@ -195,12 +195,10 @@ font-family:"ApercuRegular" !important;
 .collection{
     background-color: var(--secondary-5);
 }
+.collection-2{
+    background-color: var(--primary-color-light);
+}
 .slide-image{
-    width: 500px;
-    height: auto;
-    min-width: 18vw;
-    max-width: 25vw;
-    object-fit: contain;
     transform: rotate(5deg);
 }
 .slide-image-neg{
@@ -269,6 +267,10 @@ font-family:"ApercuRegular" !important;
     color: var(--Neutral-black) !important;
     line-height: 1.6 !important;
     padding-bottom: 20px;
+    transition: all 0.6s ease;
+}
+.card-display-reverse:hover{
+    transform: rotate(0deg) translateY(0px) !important;
 }
 .card-pink{
     background-color: var(--primary-color-light) !important;
@@ -297,8 +299,8 @@ font-family:"ApercuRegular" !important;
 
 .card-heading{
     margin-top: 0.2rem  !important;
-    margin-bottom: 1rem !important;
-    line-height: 1.2 !important;
+    margin-bottom: 0.2rem !important;
+    line-height: 1 !important;
     font-size: 65px !important;
     font-family: 'PalmerLake' !important;
 }
@@ -329,11 +331,10 @@ font-family:"ApercuRegular" !important;
     font-size: 40px !important;
 }
 .hastag{
-
     position: relative;
     z-index: 1000;
     object-fit: contain;
-    width: 30%;
+    width: 40%;
     height: auto;
     margin-bottom: -85px;
     min-width: 220px;
@@ -358,4 +359,7 @@ font-family:"ApercuRegular" !important;
 }
 .footerlist:hover{
     color: var(--secondary-3 ) !important;
+}
+.cartbutton{
+    background-color: var(--secondary-4) !important;
 }

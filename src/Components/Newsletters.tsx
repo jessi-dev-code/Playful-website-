@@ -22,7 +22,7 @@ const Newsletters = () => {
         <Container sx={{
             height:{xs:"60px",md:"45px"}
         }} className=" flex items-center justify-center">
-            <Typography className="NewsletterSlideshow !tracking-tighter" sx={{ mx: 2 }}>
+            <Typography className="NewsletterSlideshow text-center !tracking-tighter" sx={{ mx: 2 }}>
               {slides[currentSlide]}
             </Typography>
         </Container>

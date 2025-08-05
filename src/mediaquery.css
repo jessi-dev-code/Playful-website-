@@ -16,6 +16,10 @@
 .heading-body{
     font-size: 14px !important;
 }
+.slide-image{
+   min-width: 40vw !important;
+}
+
     
 }
 @media(max-width:1245px){
@@ -66,8 +70,16 @@
 }
 .card-heading{
     font-size: 45px !important;
-
+    margin-bottom: 2rem !important;
 }
-
+.hastag{
+    width: 80%;
+}
+.signup-heading{
+    font-size: 30px !important;
+}
+.logoimage{
+    max-width: 76% !important;
+}
 }
 

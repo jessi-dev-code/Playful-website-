@@ -1,83 +1,118 @@
 import { Box, Container, List, ListItem, Typography } from "@mui/material";
 import logo from "../assets/Orange_logo.png";
 import { motion } from "motion/react";
+import cherryleft from "../assets/Cherry_left.png"
+import tulips from "../assets/Tulip_Duo (1).png"
 const Footer = () => {
   return (
+    <>
     <Container
-      maxWidth="xl"
+      maxWidth={false}
       disableGutters
-      className=" grid grid-cols-10 items-center justify-between gap-[10px] px-[5%] md:px-[6%] h-[70vh] Footer mt-[4%]"
+      className=" grid grid-cols-12  items-center justify-between gap-[60px] md:gap-[20px] py-[4%] md:py-0 px-[5%] md:px-[2%] md:h-[40vh] Footer mt-[4%] relative"
     >
-    <Box className="col-span-5 grid grid-cols-6">
-        <Box className="col-span-2 items-center flex flex-col">
-          <List className="heading-body !leading-none !text-[14px] flex flex-col justify-center items-center !text-center footerlist !cursor-pointer">
-            <ListItem className="span-heading !leading-none !text-[64px] footerlist !cursor-pointer">
-              Shop
-            </ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+      <img src={cherryleft} className="absolute bottom-[90%] md:bottom-[75%] w-[180px] lg:w-[240px]  left-[4%]" />
+   <Box className="col-span-10 sm:col-span-12 md:col-span-6 grid grid-cols-12 sm:grid-cols-12 grid-flow-row-dense md:grid-cols-3 items-center justify-center gap-[20px]">
+        <Box className="col-span-12 sm:col-span-6 md:col-span-1 flex flex-col gap-[16px] items-center justify-center text-center mx-auto heading-body !leading-none !text-[14px] !cursor-pointer ">
+          <Typography className="px-2 span-heading !leading-none !text-[64px] footerlist !cursor-pointer">SHOP</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Interior</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}
+            >Interior</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Play</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>Play</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Wear</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>Wear</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Travel</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>Travel</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Gifts</ListItem>
-          </List>
+            }}>Gifts</Typography>
         </Box>
-        <Box className="col-span-2 items-center flex flex-col">
-          <List className="heading-body !leading-none !text-[14px] flex flex-col justify-center items-center !text-center footerlist !cursor-pointer">
-            <ListItem className="span-heading !leading-none !text-[64px] footerlist !cursor-pointer">
-              Help
-            </ListItem>
-            <ListItem  className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+        <Box className="col-span-12 sm:col-span-6 md:col-span-1 flex flex-col gap-[16px] items-center justify-center text-center mx-auto heading-body !leading-none !text-[14px] !cursor-pointer ">
+          <Typography className="px-2 span-heading !leading-none !text-[64px] footerlist !cursor-pointer">HELP</Typography>
+                    <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Delivery</ListItem>
-            <ListItem  className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}
+            >Delivery</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Returns</ListItem>
-            <ListItem  className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}
+            >Returns</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Contact</ListItem>
-            <ListItem  className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>Contact</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>FAQ</ListItem>
-            <ListItem  className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>FAQ</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Privacy policy</ListItem>
-            <ListItem  className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>Privacy policy</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Terms of service</ListItem>
-          </List>
+            }}>Terms of service</Typography>
         </Box>
-        <Box className="col-span-2 items-center flex flex-col">
-          <List className="heading-body !leading-none !text-[14px] flex flex-col justify-center items-center !text-center footerlist !cursor-pointer">
-            <ListItem className="span-heading !leading-none !text-[64px] footerlist !cursor-pointer">
-              Connect
-            </ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+        <Box className="col-span-12 sm:col-span-6 md:col-span-1 flex flex-col gap-[16px] items-center justify-center text-center mx-auto heading-body !leading-none !text-[14px] !cursor-pointer relative z-10 ">
+          <Typography className="px-2 span-heading !leading-none !text-[64px] footerlist !cursor-pointer">CONNECT</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>About us</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}
+            >About us</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer"
+           sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Blog</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>blog</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Instagram</ListItem>
-            <ListItem className="link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
+            }}>Instagram</Typography>
+          <Typography className="px-2 link-font hover-color footerlist !cursor-pointer" sx={{textTransform:"capitalize",
                 fontSize:"16px"
-            }}>Facebook</ListItem>
-          </List>
+            }}>Facebook</Typography>
         </Box>
-    </Box>
-
-      <Box className="col-span-5">
+        <Box className="col-span-12 sm:col-span-6 md:col-span-1 relative items-start justify-start"
+        sx={{
+          display:{xs:"flex",md:"none"}
+        }}
+        >
+        <img
+         src={tulips}
+         className="relative mx-auto"
+         width={240}
+        />
+      </Box>
+      </Box>
+    <Box className="col-span-12 sm:col-span-12  md:col-span-6">
+      <Box 
+      sx={{
+        
+        display:{xs:"none",md:"block"},
+        width:{xs:"100px",md:"240px"}
+      }}
+      >
+        <motion.img
+        animate={{
+          y:[0,-40,40,-40,0],
+        }}
+        transition={
+          {
+            duration:10,
+            repeat:Infinity
+          }
+        }
+         src={tulips}
+         className="absolute top-[70%] left-[42%] mx-auto"
+         width={240}
+        />
+      </Box>
         <motion.div
           initial={{
             rotate: [0],
@@ -94,11 +129,26 @@ const Footer = () => {
             ease: "easeInOut",
           }}
         >
-          {" "}
-          <img src={logo} />
+
+          <img src={logo}
+          className="logoimage mx-auto"
+          
+          />
         </motion.div>
-      </Box>
+    </Box>
     </Container>
+
+
+    <div className="NewsletterSection relative z-10">
+              <Container sx={{
+                  height:{xs:"60px",md:"45px"}
+              }} className=" flex items-center justify-center">
+                  <Typography className="!tracking-tighter" sx={{ mx: 2 }}>
+        © 2025, Wilf & Friends   |   Branding & Website credit
+                  </Typography>
+              </Container>
+    </div>
+    </>
   );
 };
 

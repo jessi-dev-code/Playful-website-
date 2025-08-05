@@ -5,7 +5,7 @@ import { Search } from '@mui/icons-material'
 const SignUp = () => {
   return (
     <>
-    <Container maxWidth={false} disableGutters className='signupbg !h-[80vh] relative items-center justify-center'>
+    <Container maxWidth={false} disableGutters className='signupbg !h-[60vh] relative items-center justify-center'>
                 <motion.img 
                   animate={{
                     y:[0,10,-10,0]
@@ -20,7 +20,7 @@ const SignUp = () => {
                 />
 
                 <Container maxWidth="lg" className='flex flex-col gap-1 text-center items-center justify-center h-full'>
-                    <Typography className='Heading    !text-[45px] !leading-none !tracking-tighter'> Fancy some  <span className='span-heading !md:text-[80px]'>VIP</span> treatment & 10% off?</Typography>
+                    <Typography className='Heading !text-[45px] !leading-none !tracking-tighter signup-heading'> Fancy some  <span className='span-heading !md:text-[80px]'>VIP</span> treatment & 10% off?</Typography>
                     <Typography className='heading-body !leading-snug !tracking-tight !text-[16px] max-w-[540px]' 
                     sx={{
                     WebkitTextStrokeWidth:.1
@@ -36,7 +36,8 @@ const SignUp = () => {
         justifyContent: 'space-between',
         padding: '0.8rem',
         width: '80%',
-        maxWidth: 500,
+        minWidth:300,
+        maxWidth: 600,
         mx: 'auto',
         mt: 2,
         flexWrap: 'wrap',
@@ -48,7 +49,7 @@ const SignUp = () => {
           fontWeight: 'bold',
           flex: 1,
           paddingLeft: '0.8rem',
-          minWidth: '200px',
+          maxWidth: '200px',
         }}
         fullWidth
       />

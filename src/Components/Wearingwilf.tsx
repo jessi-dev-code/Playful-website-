@@ -70,8 +70,7 @@ const Wearningwilf = () => {
                 idx % 2 === 1 ? " slide-image-neg" : ""
               }`}
               style={{
-                width: "500px",
-                minWidth: "20vw",
+                width: "400px",
                 height: "auto",
                 maxWidth: "24vw",
                 marginRight: 12,
