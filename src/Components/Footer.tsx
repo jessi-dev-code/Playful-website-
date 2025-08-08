@@ -3,6 +3,8 @@ import logo from "../assets/Orange_logo.png";
 import { motion } from "motion/react";
 import cherryleft from "../assets/Cherry_left.png"
 import tulips from "../assets/Tulip_Duo (1).png"
+import "../styles/App.css"
+import "../styles/mediaquery.css"
 const Footer = () => {
   return (
     <>
@@ -11,7 +13,7 @@ const Footer = () => {
       disableGutters
       className=" grid grid-cols-12  items-center justify-between gap-[60px] md:gap-[20px] py-[4%] md:py-0 px-[5%] md:px-[2%] md:h-[40vh] Footer mt-[4%] relative"
     >
-      <img src={cherryleft} className="absolute bottom-[90%] md:bottom-[75%] w-[180px] lg:w-[240px]  left-[4%]" />
+      <img src={cherryleft} className="absolute bottom-[90%] md:bottom-[85%] w-[180px] lg:w-[240px]  left-[4%]" />
    <Box className="col-span-10 sm:col-span-12 md:col-span-6 grid grid-cols-12 sm:grid-cols-12 grid-flow-row-dense md:grid-cols-3 items-center justify-center gap-[20px]">
         <Box className="col-span-12 sm:col-span-6 md:col-span-1 flex flex-col gap-[16px] items-center justify-center text-center mx-auto heading-body !leading-none !text-[14px] !cursor-pointer ">
           <Typography className="px-2 span-heading !leading-none !text-[64px] footerlist !cursor-pointer">SHOP</Typography>

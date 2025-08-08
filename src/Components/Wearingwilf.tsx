@@ -1,4 +1,4 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import { motion } from "motion/react";
 import wearwilf from "../assets/Wearing_WILF.webp";
 import first from "../assets/IMG_2872.jpeg";
@@ -12,6 +12,7 @@ import seventh from "../assets/image1.jpeg";
 import eigth from "../assets/borisbear.jpeg";
 import nine from "../assets/IMG_1325.jpeg";
 import ten from "../assets/Seen_on_extra_image.jpeg";
+import outersticker from "../assets/outer sticker.png"
 const images = [first, second, third, forth, fifth, seventh, eigth, nine, ten];
 const duplicate_images = [...images, ...images];
 import wave from "../assets/Diamond_3.png";
@@ -34,15 +35,34 @@ const Wearningwilf = () => {
         src={wave}
         className="absolute -top-[6%] md:top-[88%] max-w-[150px] md:max-w-[260px] left-[4%] md:left-[40px]"
       />
+      <Box className="absolute w-[100px] md:w-[200px] h-[200px] -top-[6%]  left-[70%] md:left-[80%] !z-[300] overflow-hidden rounded-[50%]">
+        <motion.img 
+        initial={{
+          rotate:30,
+        }}
+        whileHover={{
+         rotate:30,
+          x:-160,
+          y:100
+        }}
+        transition={{
+          duration:0.5,
+          delay:0.2
+        }}
+         src={outersticker}
+         className="absolute max-w-[100px] md:max-w-[200px] !z-[200]"
+        />
       <motion.img
         animate={{}}
         transition={{
           duration: 4,
           repeat: Infinity,
+          
         }}
-        className="absolute -top-[6%]  left-[70%] md:left-[80%] max-w-[100px] md:max-w-[200px] !z-[200]"
+        className="absolute  max-w-[100px] md:max-w-[200px] !z-[20]"
         src={assetcard}
       />
+      </Box>
       <Container className="text-center  flex items-center justify-center !pt-20">
         <img className="hastag" src={wearwilf} alt="" />
       </Container>

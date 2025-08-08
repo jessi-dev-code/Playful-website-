@@ -7,6 +7,8 @@ import third from "../assets/LW19727_1111_5.png"
 import second from "../assets/LW19956_9470_2.png"
 import forth from "../assets/LW19266_2334_3.png"
 import wave from "../assets/Wave_8.png"
+import "../styles/App.css"
+import "../styles/mediaquery.css"
 const ProductCollection = () => {
   return (
     <Container maxWidth={false} disableGutters className='mt-[60%] sm:mt-[24%] pb-20 lg:mt-[12%] collection relative mb-[60px] md:mb-[140px]'>

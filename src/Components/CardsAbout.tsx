@@ -7,7 +7,8 @@ import practicality from "../assets/practicality.png";
 import asthethics from "../assets/aesthetics.png";
 import community from "../assets/community.png";
 import {motion} from "motion/react";
-
+import "../styles/App.css"
+import "../styles/mediaquery.css"
 const content = [
     {
         title: "Quality",

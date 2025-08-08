@@ -1,5 +1,5 @@
 import { Box, Container, InputAdornment, TextField, Typography } from "@mui/material"
-import "../App.css"
+import "../styles/App.css"
 import logo from "../assets/Wilf_and_Friends_logo.png"
 import heart from "../assets/heart-icon.png"
 import cartbg from "../assets/cart bg.svg"

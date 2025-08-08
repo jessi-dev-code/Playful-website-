@@ -22,31 +22,31 @@
 
 @font-face {
     font-family: 'cooperRegular';
-    src: url('./fonts/cooperotf/Cooper-Regular.otf');
+    src: url('../fonts/cooperotf/Cooper-Regular.otf');
 }
 @font-face {
     font-family: 'cooperMedium';
-    src: url('./fonts/cooperotf/Cooper-Medium.otf');
+    src: url('../fonts/cooperotf/Cooper-Medium.otf');
 }
 @font-face {
     font-family: 'cooperSemi-bold';
-    src: url('./fonts/cooperotf/Cooper-SemiBold.otf');
+    src: url('../fonts/cooperotf/Cooper-SemiBold.otf');
 }
 @font-face {
     font-family: 'cooperCooper-bold';
-    src: url('./fonts/cooperotf/Cooper-Bold.otf');
+    src: url('../fonts/cooperotf/Cooper-Bold.otf');
 }
 @font-face {
     font-family: 'cooperBlack';
-    src: url('./fonts/cooperotf/Cooper-Black.otf');
+    src: url('../fonts/cooperotf/Cooper-Black.otf');
 }
 @font-face {
     font-family: 'ApercuRegular';
-    src: url('./fonts/FontsFree-Net-ApercuRegular.ttf');
+    src: url('../fonts/FontsFree-Net-ApercuRegular.ttf');
 }
 @font-face {
     font-family: 'PalmerLake';
-    src: url('./fonts/PalmerLakePrint-Regular.ttf');
+    src: url('../fonts/PalmerLakePrint-Regular.ttf');
 }
 *{
     padding: 0%;
@@ -359,4 +359,7 @@ font-family:"ApercuRegular" !important;
 }
 .footerlist:hover{
     color: var(--secondary-3 ) !important;
+}
+.cartbutton{
+    background-color: var(--secondary-4) !important;
 }

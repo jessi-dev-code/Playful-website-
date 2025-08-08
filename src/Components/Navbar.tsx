@@ -11,6 +11,8 @@ import sunglasses from "../assets/Sunglasses (1).png"
 import education from "../assets/education.png"
 import tulip from "../assets/Tulip_2.png"
 import smallheart from "../assets/smallheart.png"
+import "../styles/App.css"
+import "../styles/mediaquery.css"
 const Navbar = () => {
   const [isvisible, setIsVisible] = useState(true)
   const [isvisible1, setIsVisible1] = useState(true)

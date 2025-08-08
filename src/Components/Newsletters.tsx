@@ -1,6 +1,6 @@
 import { Container, Typography } from "@mui/material"
-import "../App.css"
-import "../mediaquery.css"
+import "../styles/App.css"
+import "../styles/mediaquery.css"
 import { useState, useEffect } from "react";
 const Newsletters = () => {
   const slides = [

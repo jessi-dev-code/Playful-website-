@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import "./App.css"
+import "../src/styles/App.css"
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Newsletters from "./Components/Newsletters";
@@ -8,16 +8,17 @@ import { motion } from 'framer-motion';
 import HeroSection from "./Components/HeroSection";
 import ProductCollection from "./Components/Collection";
 import ProductCollection2 from "./Components/ProductDisplay";
-// import Wearningwilf from "./Components/Wearingwilf";
-import SignUp from "./Components/signUp";
+import SignUp from "./Components/signUp"
 import Footer from "./Components/Footer";
 import CardsAbout from "./Components/CardsAbout";
 import Wearningwilf from "./Components/WearingWilf";
-import Slideshow from "./Components/slideshow";
+import Slideshow from "./Components/SlideShoesection";
+// import SmoothScroll from "./Components/smoothscrollcomponent";
 function App() {
   return (
     <>
     <Box className="overflow-hidden relative">
+    {/* <SmoothScroll> */}
     <Newsletters />
     <Header />
     <Navbar />
@@ -29,6 +30,7 @@ function App() {
     <Wearningwilf />
     <SignUp />
     <Footer />
+    {/* </SmoothScroll>/ */}
     </Box>
     <Box className="w-[100px] absolute bottom-10 right-10 !overflow-hidden">
     <motion.img 
