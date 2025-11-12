@@ -1,4 +1,4 @@
-import { Box, Container, List, ListItem, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import logo from "../assets/Orange_logo.png";
 import { motion } from "motion/react";
 import cherryleft from "../assets/Cherry_left.png"
