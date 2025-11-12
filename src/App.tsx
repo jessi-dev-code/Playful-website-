@@ -11,7 +11,7 @@ import ProductCollection2 from "./Components/ProductDisplay";
 import SignUp from "./Components/signUp"
 import Footer from "./Components/Footer";
 import CardsAbout from "./Components/CardsAbout";
-import Wearningwilf from "./Components/WearingWilf";
+import Wearningwilf from "./Components/Wearingwilf";
 import Slideshow from "./Components/SlideShoesection";
 // import SmoothScroll from "./Components/smoothscrollcomponent";
 function App() {
